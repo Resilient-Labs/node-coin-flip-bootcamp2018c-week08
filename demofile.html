@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Flip a Coin</title>
+</head>
+<body>
+  <h1>Heads And Tails</h1>
+  <input id="head" type="button" name="" value="HEADS" .onclick="head">
+  <input id="tail" type="button" name="" value="TAIL" .onclick="tail">
+  <br>
+  Coin Flip is <span id="coin"></span>
+
+  <script type="text/javascript">
+  function heads(){
+    let user = document.getElementById('head').value
+    coinFlip()
+    console.log(coin.textContent);
+
+    if(user === coin.textContent){
+      alert("winner winner chicken dinner!")
+    }else {
+      alert('flip again my friend!')
+    }
+  }
+
+  function tails(){
+    let user = document.getElementById('tail').value
+    coinFlip()
+    console.log(coin,textContent);
+
+    if(user === coin.textContent){
+      alert('Winner Winner chicken dinner!!')
+    }else {
+      alert('Try Agian Big Fella!!')
+    }
+  }
+  function coinFlip(){
+    let randomNumber= Math.random();
+    let coin = "HEADS";
+    if(randimNumber < .5){
+      coin = "TAILS"
+    }
+    document.getElementById('coin').textContent = coin
+  }
+  </script>
+</body>
+</html>
