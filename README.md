@@ -1,22 +1,15 @@
-# 💸 Week08 Bootcamp2018c Project: Node Coin Flip Game
+# 💸 Node Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+### Created a simple web application that uses the fs and http modules. Used http to create the server and fs to read your html file. Included vanilla ES6 js in a script tag at the bottom of your html file. Created a coin flip guessing game.
 
-### How to submit your code for review:
+## How It's Made:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+**Tech used:** HTML5, CSS3, JavaScript, Node.js.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Examples:
+
+**Tech Wu-tang Name Generator** https://github.com/ericamendez/wu-tang-generator-bootcamp2018c-week08
+
+**Card Memory Game** https://github.com/ericamendez/matching-card-bootcamp2018c-week08/tree/answer
+
+**Complex NASA API** https://github.com/ericamendez/complex-nasa-bootcamp2018c-week07
