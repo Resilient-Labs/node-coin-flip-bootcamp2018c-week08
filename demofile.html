@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      .container{
+        text-align: center;
+      }
+      h1{
+        font-size: 3em;
+        text-align: center;
+      }
+
+      p{
+        color: white;
+        background-color: rgb(10,58,140);
+        border-radius: 300px;
+        margin:20px 40%;
+        font-size: 4em;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 20px;
+      }
+
+      #dif{
+        text-align: center;
+      }
+
+      input{
+        background-color: black;
+        color:white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        border: none;
+        padding: 5px 10px;
+      }
+
+      input:hover{
+        background-color: rgb(241,179,79);
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <section class="container">
+      <h1>HEADS OR TAILS?</h1>
+      <form class="in" action="index.html" method="post">
+        <input id="h" type="button" name="HEADS" value="heads">
+        <input id="t" type="button" name="TAILS" value="tails">
+      </form>
+      <p id="vis"></p>
+      <h2 id="result"></h2>
+    </section>
+
+    <script type="text/javascript">
+
+      const head = document.querySelector("#h")
+      const tail = document.querySelector("#t")
+      const result = document.querySelector("#result")
+      const vis = document.querySelector("#vis")
+
+      head.addEventListener("click", function(e){
+        flip(head.value)
+      })
+      tail.addEventListener("click", function(e){
+        flip(tail.value)
+      })
+
+      function flip(n){
+        let htArr = ["heads", "tails"]
+        let i = Math.floor(Math.random()*2)
+
+        vis.textContent = n
+
+        if(n == htArr[i]){
+          result.textContent = `GUESS WAS RIGHT!!!`
+        }else{
+          result.textContent = `WRONG GUESS :(`
+        }
+      }
+
+    </script>
+  </body>
+</html>
